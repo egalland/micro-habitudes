@@ -54,3 +54,7 @@ L’application actuelle utilise un serveur et Cloudflare D1. La connexion ChatG
 L’identifiant présent dans `.openai/hosting.json` désigne le Site existant ; ce fichier n’est pas un secret. Le copier dans un nouveau projet ne crée pas une nouvelle base et ne transfère pas les données du journal.
 
 L’export/import JSON permet de sauvegarder manuellement les habitudes depuis l’application actuelle.
+
+## Version GitHub Pages
+
+`npm run build:pages` produit `pages-dist/`, utilisable sous un sous-dossier comme `/miniature/`. Cette version utilise une sauvegarde locale vérifiée et le même export/import JSON. Les données Sites ne sont pas importées automatiquement ; exportez votre journal depuis la version d’origine pour le restaurer ici. Aucun compte ni serveur n’est nécessaire. Les sources de la version Sites gardent leur API et leur sauvegarde existantes.
